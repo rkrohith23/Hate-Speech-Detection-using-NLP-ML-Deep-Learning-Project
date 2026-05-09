@@ -1,7 +1,5 @@
 # Hate-Speech-Detection-using-NLP-ML-Deep-Learning-Project
 
-# Hate Speech Detection using NLP, BiLSTM & DistilBERT
-
 ##  Project Overview
 This project focuses on detecting hate speech in social media text using Natural Language Processing (NLP), Deep Learning, and Transformer-based models. The study compares the performance of traditional machine learning approaches with advanced neural network architectures for binary hate speech classification.
 
@@ -10,7 +8,7 @@ The project implements and evaluates:
 - Bidirectional LSTM (BiLSTM)
 - DistilBERT Transformer Model
 
----
+
 
 ##  Objectives
 - Detect hate speech in social media text
@@ -19,7 +17,7 @@ The project implements and evaluates:
 - Evaluate models using multiple performance metrics
 - Build a real-time hate speech prediction system
 
----
+
 
 #  Dataset Description
 The dataset contains social media posts categorized into:
@@ -31,7 +29,7 @@ The original multiclass dataset was converted into binary classification:
 - Hate Speech → 1
 - Non-Hate Speech → 0
 
----
+
 
 #  Technologies Used
 
@@ -46,7 +44,7 @@ The original multiclass dataset was converted into binary classification:
 - NLTK
 - PyTorch
 
----
+
 
 #  Text Preprocessing
 The following preprocessing techniques were applied:
@@ -57,7 +55,7 @@ The following preprocessing techniques were applied:
 - Tokenization
 - Sequence padding
 
----
+
 
 #  Handling Class Imbalance
 The dataset was highly imbalanced. To improve model performance:
@@ -65,7 +63,7 @@ The dataset was highly imbalanced. To improve model performance:
 - Majority class was undersampled
 - Balanced dataset was shuffled before training
 
----
+
 
 #  Models Implemented
 
@@ -84,7 +82,7 @@ Traditional machine learning baseline model using:
 - Cannot capture contextual meaning
 - Limited sequential understanding
 
----
+
 
 ## 2️⃣ Bidirectional LSTM (BiLSTM)
 Deep learning model capable of learning:
@@ -100,7 +98,7 @@ Deep learning model capable of learning:
 - Dropout Layer
 - Sigmoid Output Layer
 
----
+
 
 ## 3️⃣ DistilBERT
 Transformer-based pretrained language model using:
@@ -113,7 +111,7 @@ Transformer-based pretrained language model using:
 - Excellent recall performance
 - Handles semantic meaning effectively
 
----
+
 
 #  Model Performance
 
@@ -123,7 +121,7 @@ Transformer-based pretrained language model using:
 | BiLSTM | 0.97 | 0.97 | 0.96 | 0.96 |
 | DistilBERT | 0.95 | 0.89 | 0.98 | 0.94 |
 
----
+
 
 #  Model Comparison
 
@@ -135,7 +133,6 @@ The BiLSTM model delivered the best overall performance, achieving an accuracy o
 
 DistilBERT achieved an accuracy of 0.95 with the highest recall of 0.98, demonstrating exceptional capability in identifying hate speech instances with minimal false negatives. This makes DistilBERT particularly suitable for safety-sensitive applications where detecting harmful content is prioritised.
 
----
 
 #  Best Performing Model
 BiLSTM achieved the best overall balanced performance across:
